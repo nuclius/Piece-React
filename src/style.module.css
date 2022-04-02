@@ -27,6 +27,8 @@
   --dl-space-space-eightunits: 128px;
   --dl-space-space-threeunits: 48px;
   --dl-color-scheme-lightgreen: #c7ff9bff;
+  --dl-color-scheme-piecegreen: #aacbbcff;
+  --dl-color-scheme-pointgreen: #1a734aff;
   --dl-space-space-oneandhalfunits: 24px;
 }
 .button {
@@ -210,9 +212,8 @@
 }
 .before-Heading {
   font-size: 14px;
-  font-style: normal;
-  font-family: Urbanist;
-  font-weight: 800;
+  font-family: Righteous;
+  font-weight: 400;
   line-height: 1.15;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -220,18 +221,24 @@
 }
 .brand-Name {
   font-size: 20px;
-  font-style: normal;
-  font-family: Urbanist;
-  font-weight: 800;
+  font-family: Righteous;
+  font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   text-decoration: none;
 }
+.headings {
+  font-size: 14px;
+  font-family: Overlock;
+  font-weight: 700;
+  text-transform: none;
+  text-decoration: none;
+}
 .navbar-Link {
   font-size: 16px;
   font-style: normal;
-  font-family: Titillium Web;
+  font-family: Overlock;
   font-weight: 600;
   line-height: 1.5;
   text-transform: none;
@@ -239,10 +246,9 @@
 }
 .content {
   font-size: 16px;
-  font-family: Titillium Web;
+  font-family: Raleway;
   font-weight: 400;
   line-height: 1.15;
-  text-transform: none;
   text-decoration: none;
 }
 
