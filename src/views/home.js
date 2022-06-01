@@ -4,12 +4,11 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
 import Card from '../components/card'
-import projectStyles from '../style.module.css'
-import styles from './home.module.css'
+import './home.css'
 
 const Home = (props) => {
   return (
-    <div className={styles['container']}>
+    <div className="home-container">
       <Helmet>
         <title>Piece - The People's Property Platform</title>
         <meta
@@ -29,132 +28,87 @@ const Home = (props) => {
           content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/278961ff-9b39-423f-b8fb-60238a66ff16/c130985d-c208-4de0-a76d-b688ac1849f2?org_if_sml=1"
         />
       </Helmet>
-      <div className={projectStyles['navbar-container']}>
-        <div className={projectStyles['max-width']}>
-          <div className={styles['Logo']}>
-            <Link to="/" className={styles['navlink']}>
+      <div className="navbar-container">
+        <div className="max-width">
+          <div className="home-logo">
+            <Link to="/" className="home-navlink">
               <img
                 alt="image"
                 src="/playground_assets/piece-logo-200h.png"
-                className={styles['image']}
+                className="home-image"
               />
             </Link>
           </div>
-          <div className={styles['Links']}>
-            <span
-              className={` ${styles['Text']} ${projectStyles['navbar-Link']} `}
-            >
-              How it works
-            </span>
-            <span
-              className={` ${styles['text01']} ${projectStyles['navbar-Link']} `}
-            >
-              Features
-            </span>
-            <span
-              className={` ${styles['text02']} ${projectStyles['navbar-Link']} `}
-            >
-              Blog
-            </span>
-            <span
-              className={` ${styles['text03']} ${projectStyles['navbar-Link']} `}
-            >
-              Pricing
-            </span>
-            <button
-              className={` ${projectStyles['button-secondary']} ${projectStyles['button']} `}
-            >
-              Log in
-            </button>
-            <button
-              className={` ${projectStyles['button']} ${projectStyles['button-primary']} `}
-            >
-              Get started
-            </button>
+          <div className="home-links">
+            <span className="home-text navbar-Link">How it works</span>
+            <span className="home-text001 navbar-Link">Features</span>
+            <span className="home-text002 navbar-Link">Blog</span>
+            <span className="home-text003 navbar-Link">Pricing</span>
+            <button className="button-secondary button">Log in</button>
+            <button className="button button-primary">Get started</button>
           </div>
-          <div
-            className={` ${styles['BurgerMenu']} ${projectStyles['navbar-burger-menu']} `}
-          >
-            <svg viewBox="0 0 1024 1024" className={styles['icon']}>
+          <div className="home-burger-menu navbar-burger-menu">
+            <svg viewBox="0 0 1024 1024" className="home-icon">
               <path d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"></path>
             </svg>
           </div>
         </div>
       </div>
-      <div
-        className={` ${styles['Hero']} ${projectStyles['hero-container']} ${projectStyles['section-container']} `}
-      >
-        <div
-          className={` ${styles['max-width1']} ${projectStyles['max-width']} `}
-        >
-          <div className={styles['Content']}>
-            <h1 className={styles['text04']}>
-              <span className={styles['text05']}>
-                The people&apos;s property
+      <div className="home-hero hero-container section-container">
+        <div className="home-max-width1 max-width">
+          <div className="home-content">
+            <h1 className="home-text004">
+              <span className="home-text005">Robinhood</span>
+              <br></br>
+              <span>
+                Robin Hood
                 <span
                   dangerouslySetInnerHTML={{
                     __html: ' ',
                   }}
                 />
               </span>
-              <span className={styles['text06']}>platform</span>
+              <br></br>
+              <span>for Real Estate</span>
             </h1>
-            <span className={styles['text07']}>
-              Piece is a social network for sustainable affordable housing. Earn
-              Pieces (of real properties) and Points (for free rent) by building
-              better shelter for all.
+            <span className="home-text010">
+              <span className="home-text011">
+                Build sustainable, affordable housing,
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </span>
             </span>
-            <div className={styles['container01']}>
-              <button
-                className={` ${projectStyles['button']} ${projectStyles['button-gradient']} `}
-              >
-                Get started
-              </button>
-              <button
-                className={` ${projectStyles['button']} ${projectStyles['button-transparent']} `}
-              >
-                Log in
-              </button>
+            <div className="home-container01">
+              <button className="button button-gradient">Get started</button>
+              <button className="button button-transparent">Log in</button>
             </div>
           </div>
-          <div className={styles['Image1']}>
+          <div className="home-content1"></div>
+          <div className="home-image1">
             <img
               alt="image"
               src="/playground_assets/hero-600w.png"
-              className={styles['hero-image']}
-            />
-            <img
-              alt="image"
-              src="/playground_assets/union-400w.png"
-              className={styles['graphic-top']}
-            />
-            <img
-              alt="image"
-              src="/playground_assets/group%2018-1200w.png"
-              className={styles['image2']}
+              className="home-hero-image"
             />
           </div>
         </div>
       </div>
-      <div className={projectStyles['section-container']}>
-        <div
-          className={` ${styles['max-width2']} ${projectStyles['max-width']} `}
-        >
-          <div className={styles['Image3']}>
+      <div className="section-container">
+        <div className="home-max-width2 max-width">
+          <div className="home-image2">
             <img
               alt="image"
               src="/playground_assets/group%2020-1200w.png"
-              className={styles['hero-image1']}
+              className="home-hero-image1"
             />
           </div>
-          <div className={styles['Content1']}>
-            <span
-              className={` ${styles['text08']} ${projectStyles['before-Heading']} `}
-            >
-              how it works
-            </span>
-            <h1 className={styles['text09']}>
-              <span className={styles['text10']}>
+          <div className="home-content2">
+            <span className="home-text012 before-Heading">how it works</span>
+            <h1 className="home-text013">
+              <span className="home-text014">
                 Pay and get paid
                 <span
                   dangerouslySetInnerHTML={{
@@ -162,7 +116,7 @@ const Home = (props) => {
                   }}
                 />
               </span>
-              <span className={styles['text11']}>
+              <span className="home-text015">
                 faster
                 <span
                   dangerouslySetInnerHTML={{
@@ -170,120 +124,96 @@ const Home = (props) => {
                   }}
                 />
               </span>
-              <span className={styles['text12']}>than ever.</span>
-              <span className={styles['text13']}></span>
+              <span className="home-text016">than ever.</span>
+              <span className="home-text017"></span>
             </h1>
-            <span className={styles['text14']}>
+            <span className="home-text018">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </span>
-            <div className={styles['container02']}>
-              <button
-                className={` ${projectStyles['button-secondary']} ${projectStyles['button']} ${projectStyles['bg-transparent']} `}
-              >
+            <div className="home-container02">
+              <button className="button-secondary button bg-transparent">
                 Learn more
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div
-        className={` ${styles['Section1']} ${projectStyles['section-container']} `}
-      >
-        <div
-          className={` ${styles['max-width3']} ${projectStyles['max-width']} `}
-        >
-          <div className={styles['Content2']}>
-            <span
-              className={` ${styles['text15']} ${projectStyles['before-Heading']} `}
-            >
-              save money
-            </span>
-            <h1 className={styles['text16']}>
-              <span className={styles['text17']}>Earn cashback</span>
+      <div className="home-section1 section-container">
+        <div className="home-max-width3 max-width">
+          <div className="home-content3">
+            <span className="home-text019 before-Heading">save money</span>
+            <h1 className="home-text020">
+              <span className="home-text021">Earn cashback</span>
               <br></br>
-              <span className={styles['text19']}>
-                from your favorite brands
-              </span>
+              <span className="home-text023">from your favorite brands</span>
             </h1>
-            <span className={styles['text20']}>
+            <span className="home-text024">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </span>
-            <div className={styles['container03']}>
-              <button
-                className={` ${projectStyles['button-secondary']} ${projectStyles['button']} ${projectStyles['bg-transparent']} `}
-              >
+            <div className="home-container03">
+              <button className="button-secondary button bg-transparent">
                 See how
               </button>
             </div>
           </div>
-          <div className={styles['Image4']}>
+          <div className="home-image3">
             <img
               alt="image"
               src="/playground_assets/group%2021-1200w.png"
-              className={styles['hero-image2']}
+              className="home-hero-image2"
             />
           </div>
         </div>
       </div>
-      <div
-        className={` ${styles['Section2']} ${projectStyles['section-container']} `}
-      >
-        <div
-          className={` ${styles['max-width4']} ${projectStyles['max-width']} `}
-        >
-          <div className={styles['Image5']}>
+      <div className="home-section2 section-container">
+        <div className="home-max-width4 max-width">
+          <div className="home-image4">
             <img
               alt="image"
               src="/playground_assets/jc-gellidon-fnc3yctccoi-unsplash%2014%20%5B1%5D-1200w.png"
-              className={styles['hero-image3']}
+              className="home-hero-image3"
             />
           </div>
-          <div className={styles['Content3']}>
-            <span
-              className={` ${styles['text21']} ${projectStyles['before-Heading']} `}
-            >
-              get started
-            </span>
-            <h1 className={styles['text22']}>Open your account today</h1>
-            <div className={styles['Step']}>
-              <div className={styles['Number']}>
-                <span className={styles['text23']}>1</span>
+          <div className="home-content4">
+            <span className="home-text025 before-Heading">get started</span>
+            <h1 className="home-text026">Open your account today</h1>
+            <div className="home-step">
+              <div className="home-number">
+                <span className="home-text027">1</span>
               </div>
-              <div className={styles['container04']}>
-                <span className={styles['title']}>Download UpStart App</span>
-                <span className={styles['text24']}>
+              <div className="home-container04">
+                <span className="home-title">Download UpStart App</span>
+                <span className="home-text028">
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                   amet sint. Velit officia consequat duis enim velit mollit.
                 </span>
               </div>
             </div>
-            <div className={styles['Step1']}>
-              <div className={styles['Number1']}>
-                <span className={styles['text25']}>2</span>
+            <div className="home-step1">
+              <div className="home-number1">
+                <span className="home-text029">2</span>
               </div>
-              <div className={styles['container05']}>
-                <span className={styles['title1']}>
-                  Create your free account
-                </span>
-                <span className={styles['text26']}>
+              <div className="home-container05">
+                <span className="home-title1">Create your free account</span>
+                <span className="home-text030">
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                   amet sint. Velit officia consequat duis enim velit mollit.
                 </span>
               </div>
             </div>
-            <div className={styles['Step2']}>
-              <div className={styles['Number2']}>
-                <span className={styles['text27']}>3</span>
+            <div className="home-step2">
+              <div className="home-number2">
+                <span className="home-text031">3</span>
               </div>
-              <div className={styles['container06']}>
-                <span className={styles['title2']}>
+              <div className="home-container06">
+                <span className="home-title2">
                   Link your existing credit cards
                 </span>
-                <span className={styles['text28']}>
+                <span className="home-text032">
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                   amet sint. Velit officia consequat duis enim velit mollit.
                 </span>
@@ -292,42 +222,28 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <div className={projectStyles['section-container']}>
-        <div
-          className={` ${styles['max-width5']} ${projectStyles['max-width']} `}
-        >
-          <span
-            className={` ${styles['text29']} ${projectStyles['before-Heading']} `}
-          >
-            get started
-          </span>
-          <h1 className={styles['text30']}>
+      <div className="section-container">
+        <div className="home-max-width5 max-width">
+          <span className="home-text033 before-Heading">get started</span>
+          <h1 className="home-text034">
             <span>No matter what you do,</span>
             <br></br>
             <span>UpStart will save you money</span>
           </h1>
-          <div className={styles['cards-container']}>
-            <Card rootClassName="rootClassName2"></Card>
-            <Card text="Personal" rootClassName="rootClassName"></Card>
-            <Card text="Family" rootClassName="rootClassName1"></Card>
+          <div className="home-cards-container">
+            <Card rootClassName="card-root-class-name2"></Card>
+            <Card text="Personal" rootClassName="card-root-class-name"></Card>
+            <Card text="Family" rootClassName="card-root-class-name1"></Card>
           </div>
         </div>
       </div>
-      <div
-        className={` ${styles['Section4']} ${projectStyles['section-container']} `}
-      >
-        <div
-          className={` ${styles['max-width6']} ${projectStyles['max-width']} `}
-        >
-          <div className={styles['FAQ']}>
-            <div className={styles['Questions']}>
-              <span
-                className={` ${styles['text33']} ${projectStyles['before-Heading']} `}
-              >
-                faq
-              </span>
-              <h1 className={styles['text34']}>
-                <span className={styles['text35']}>
+      <div className="home-section4 section-container">
+        <div className="home-max-width6 max-width">
+          <div className="home-f-a-q">
+            <div className="home-questions">
+              <span className="home-text037 before-Heading">faq</span>
+              <h1 className="home-text038">
+                <span className="home-text039">
                   Frequently Asked
                   <span
                     dangerouslySetInnerHTML={{
@@ -336,91 +252,70 @@ const Home = (props) => {
                   />
                 </span>
                 <br></br>
-                <span className={styles['text37']}>Questions</span>
+                <span className="home-text041">Questions</span>
               </h1>
-              <div data-role="Accordion" className={projectStyles['question']}>
-                <div data-type="accordion-header" className={styles['Trigger']}>
-                  <span className={styles['text38']}>
+              <div data-role="Accordion" className="question">
+                <div data-type="accordion-header" className="home-trigger">
+                  <span className="home-text042">
                     Is this a Free or Paid service?
                   </span>
-                  <svg viewBox="0 0 1024 1024" className={styles['icon02']}>
+                  <svg viewBox="0 0 1024 1024" className="home-icon02">
                     <path d="M810 554h-256v256h-84v-256h-256v-84h256v-256h84v256h256v84z"></path>
                   </svg>
                 </div>
-                <div
-                  data-type="accordion-content"
-                  className={projectStyles['question-content']}
-                >
-                  <span className={styles['text39']}>
+                <div data-type="accordion-content" className="question-content">
+                  <span className="home-text043">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor
                     do amet sint. Velit officia consequat duis enim velit
                     mollit.
                   </span>
                 </div>
               </div>
-              <div data-role="Accordion" className={projectStyles['question']}>
-                <div
-                  data-type="accordion-header"
-                  className={styles['Trigger1']}
-                >
-                  <span className={styles['text40']}>
+              <div data-role="Accordion" className="question">
+                <div data-type="accordion-header" className="home-trigger1">
+                  <span className="home-text044">
                     Do you operate in United Stated?
                   </span>
-                  <svg viewBox="0 0 1024 1024" className={styles['icon04']}>
+                  <svg viewBox="0 0 1024 1024" className="home-icon04">
                     <path d="M810 554h-256v256h-84v-256h-256v-84h256v-256h84v256h256v84z"></path>
                   </svg>
                 </div>
-                <div
-                  data-type="accordion-content"
-                  className={projectStyles['question-content']}
-                >
-                  <span className={styles['text41']}>
+                <div data-type="accordion-content" className="question-content">
+                  <span className="home-text045">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor
                     do amet sint. Velit officia consequat duis enim velit
                     mollit.
                   </span>
                 </div>
               </div>
-              <div data-role="Accordion" className={projectStyles['question']}>
-                <div
-                  data-type="accordion-header"
-                  className={styles['Trigger2']}
-                >
-                  <span className={styles['text42']}>
+              <div data-role="Accordion" className="question">
+                <div data-type="accordion-header" className="home-trigger2">
+                  <span className="home-text046">
                     Is this a globally available bank?
                   </span>
-                  <svg viewBox="0 0 1024 1024" className={styles['icon06']}>
+                  <svg viewBox="0 0 1024 1024" className="home-icon06">
                     <path d="M810 554h-256v256h-84v-256h-256v-84h256v-256h84v256h256v84z"></path>
                   </svg>
                 </div>
-                <div
-                  data-type="accordion-content"
-                  className={projectStyles['question-content']}
-                >
-                  <span className={styles['text43']}>
+                <div data-type="accordion-content" className="question-content">
+                  <span className="home-text047">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor
                     do amet sint. Velit officia consequat duis enim velit
                     mollit.
                   </span>
                 </div>
               </div>
-              <div data-role="Accordion" className={projectStyles['question']}>
-                <div
-                  data-type="accordion-header"
-                  className={styles['Trigger3']}
-                >
-                  <span className={styles['text44']}>
+              <div data-role="Accordion" className="question">
+                <div data-type="accordion-header" className="home-trigger3">
+                  <span className="home-text048">
                     Do you have an iOS or Android app?
                   </span>
-                  <svg viewBox="0 0 1024 1024" className={styles['icon08']}>
+                  <svg viewBox="0 0 1024 1024" className="home-icon08">
                     <path d="M810 554h-256v256h-84v-256h-256v-84h256v-256h84v256h256v84z"></path>
                   </svg>
                 </div>
-                <div
-                  data-type="accordion-content"
-                  className={projectStyles['question-content']}
-                >
-                  <span className={styles['text45']}>
+                <div data-type="accordion-content" className="question-content">
+                  <span className="home-text049">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor
                     do amet sint. Velit officia consequat duis enim velit
                     mollit.
@@ -431,23 +326,19 @@ const Home = (props) => {
             <img
               alt="image"
               src="/playground_assets/group%202-1200w.png"
-              className={styles['image6']}
+              className="home-image5"
             />
           </div>
-          <div className={styles['Banner']}>
-            <span
-              className={` ${styles['text46']} ${projectStyles['before-Heading']} `}
-            >
-              get started
-            </span>
-            <h1 className={styles['text47']}>
+          <div className="home-banner">
+            <span className="home-text050 before-Heading">get started</span>
+            <h1 className="home-text051">
               <span>Push your finances to</span>
               <br></br>
               <span></span>
               <span></span>
               <span> the next level.</span>
             </h1>
-            <span className={styles['text53']}>
+            <span className="home-text057">
               <span>
                 Amet minim mollit non deserunt ullamco est sit
                 <span
@@ -466,77 +357,75 @@ const Home = (props) => {
                 />
               </span>
             </span>
-            <div className={styles['btns']}>
-              <button
-                className={` ${styles['button6']} ${projectStyles['button']} ${projectStyles['button-transparent']} `}
-              >
+            <div className="home-btns">
+              <button className="home-button6 button button-transparent">
                 See all plans
               </button>
-              <button
-                className={` ${styles['button7']} ${projectStyles['button']} ${projectStyles['button-gradient']} `}
-              >
+              <button className="home-button7 button button-gradient">
                 Get started
               </button>
             </div>
           </div>
         </div>
       </div>
-      <footer className={styles['Footer']}>
-        <div className={styles['LinksContainer']}>
-          <div className={styles['Container07']}>
-            <div className={projectStyles['footer-column']}>
-              <span className={styles['text57']}>Product</span>
-              <span className={styles['text58']}>How it works</span>
-              <span className={styles['text59']}>Features</span>
-              <span className={styles['text60']}>Pricing</span>
-              <span className={styles['text61']}>Blog</span>
+      <footer className="home-footer">
+        <div className="home-links-container">
+          <div className="home-container07">
+            <div className="footer-column">
+              <span className="home-text061">Product</span>
+              <span className="home-text062">How it works</span>
+              <span className="home-text063">Features</span>
+              <span className="home-text064">Pricing</span>
+              <span className="home-text065">Blog</span>
               <span>FAQ</span>
             </div>
-            <div className={projectStyles['footer-column']}>
-              <span className={styles['text63']}>App</span>
-              <span className={styles['text64']}>Download iOS app</span>
-              <span className={styles['text65']}>Download Android app</span>
-              <span className={styles['text66']}>Log in to Portal</span>
-              <span className={styles['text67']}>Administrative</span>
+            <div className="footer-column">
+              <span className="home-text067">App</span>
+              <span className="home-text068">Download iOS app</span>
+              <span className="home-text069">Download Android app</span>
+              <span className="home-text070">Log in to Portal</span>
+              <span className="home-text071">Administrative</span>
               <span>Legal</span>
             </div>
-            <div className={projectStyles['footer-column']}>
-              <span className={styles['text69']}>Company</span>
-              <span className={styles['text70']}>About us</span>
-              <span className={styles['text71']}>Culture</span>
-              <span className={styles['text72']}>Code of conduct</span>
-              <span className={styles['text73']}>Careers</span>
-              <span className={styles['text74']}>News</span>
+            <div className="footer-column">
+              <span className="home-text073">Company</span>
+              <Link to="/about" className="home-navlink1">
+                About us
+              </Link>
+              <span className="home-text074">Culture</span>
+              <span className="home-text075">Code of conduct</span>
+              <span className="home-text076">Careers</span>
+              <span className="home-text077">News</span>
               <span>Contact</span>
             </div>
-            <div className={projectStyles['footer-column']}>
-              <span className={styles['text76']}>Invest</span>
-              <span className={styles['text77']}>Commodity</span>
-              <span className={styles['text78']}>Savings</span>
-              <span className={styles['text79']}>
+            <div className="footer-column">
+              <span className="home-text079">Invest</span>
+              <span className="home-text080">Commodity</span>
+              <span className="home-text081">Savings</span>
+              <span className="home-text082">
                 <span>Taxes and fees</span>
                 <br></br>
                 <span></span>
               </span>
-              <span className={styles['text82']}>
+              <span className="home-text085">
                 <span>Currency exchange</span>
               </span>
               <span>Community</span>
             </div>
-            <div className={projectStyles['footer-column']}>
-              <span className={styles['text85']}>Security</span>
-              <span className={styles['text86']}>Security status</span>
-              <span className={styles['text87']}>ISO</span>
-              <span className={styles['text88']}>System status</span>
+            <div className="footer-column">
+              <span className="home-text088">Security</span>
+              <span className="home-text089">Security status</span>
+              <span className="home-text090">ISO</span>
+              <span className="home-text091">System status</span>
               <span>Customer Help</span>
             </div>
-            <div className={projectStyles['footer-column']}>
-              <span className={styles['text90']}>Follow</span>
-              <span className={styles['text91']}>Instagram</span>
-              <span className={styles['text92']}>Twitter</span>
-              <span className={styles['text93']}>Facebook</span>
-              <span className={styles['text94']}>Tik Tok</span>
-              <span className={styles['text95']}>Linkedln</span>
+            <div className="footer-column">
+              <span className="home-text093">Follow</span>
+              <span className="home-text094">Instagram</span>
+              <span className="home-text095">Twitter</span>
+              <span className="home-text096">Facebook</span>
+              <span className="home-text097">Tik Tok</span>
+              <span className="home-text098">Linkedln</span>
               <span>Youtube</span>
             </div>
           </div>

@@ -2,14 +2,14 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import styles from './card.module.css'
+import './card.css'
 
 const Card = (props) => {
   return (
-    <div className={` ${styles['Card']} ${styles[props.rootClassName]} `}>
-      <div className={styles['Info']}>
-        <span className={styles['text']}>{props.text}</span>
-        <span className={styles['text1']}>{props.text1}</span>
+    <div className={`card-card ${props.rootClassName} `}>
+      <div className="card-info">
+        <span className="card-text">{props.text}</span>
+        <span className="card-text1">{props.text1}</span>
       </div>
     </div>
   )
